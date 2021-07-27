@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="feedheal">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="feedheal.jar">
+      <element id="module-output" name="feedheal" />
+    </root>
+  </artifact>
+</component>

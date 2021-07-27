@@ -1,0 +1,9 @@
+name: feedheal
+version: 0
+main: ffdfsg.Meat
+api-version: 1.14
+commands:
+  heal:
+    description: heals you
+  feed:
+    discription: feeds you
