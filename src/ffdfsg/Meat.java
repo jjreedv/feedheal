@@ -44,6 +44,10 @@ public class Meat extends JavaPlugin implements CommandExecutor {
         try {
             boolean launch = cmd.getName().equalsIgnoreCase("launch");
             if (launch) {
+                if (args.length > 100) {
+                    p.sendMessage(ChatColor.RED + "Lower than 100, pls no break me");
+                    return true;
+                }
                 //  is /launch
                 if (args.length == 0) {
                     p.sendMessage(ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "ZOOOOOOOM!");
