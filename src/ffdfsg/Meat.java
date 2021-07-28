@@ -35,10 +35,23 @@ public class Meat extends JavaPlugin implements CommandExecutor {
             return true;
         }
 
-        if (cmd.getName().equalsIgnoreCase("feed")){
+        if (cmd.getName().equalsIgnoreCase("feed")) {
             p.setFoodLevel(20);
+            return true;
         }
+        if (cmd.getName().equalsIgnoreCase("launch")) {
+            //  is /launch
+            if (args.length == 0) {
+                p.sendMessage(ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "ZOOOOOOOM!");
+                p.setVelocity(p.getLocation().getDirection().multiply(2).setY(2));
+                return true;
+            }
 
-        return true;
+            //  is /launch <number>
+            p.sendMessage(ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "ZOOOOOOOM!");
+            p.setVelocity(p.getLocation().getDirection().multiply(Integer.parseInt(args[0])).setY(2));
+            return true;
+        }
+        return false;
     }
 }

@@ -7,3 +7,5 @@ commands:
     description: heals you
   feed:
     discription: feeds you
+  launch:
+    discription: launches you
